@@ -28,6 +28,7 @@ async def signup_user(user: UserCreate,db: Session = Depends(get_db)):
     db.commit()
     return user_db
 
+
 #login user route
 
 @router.post("/login")
